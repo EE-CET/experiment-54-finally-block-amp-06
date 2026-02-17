@@ -11,7 +11,7 @@ public class FinallyDemo {
             int result = a / b;
             System.out.println("Result: " + result);
         } catch (ArithmeticException e) {
-            System.out.println("Error");
+            System.out.println("Error: " + e.getMessage());
         } finally {
             System.out.println("Finally block executed");
         }
@@ -19,3 +19,4 @@ public class FinallyDemo {
         sc.close();
     }
 }
+
